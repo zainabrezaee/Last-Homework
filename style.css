@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #DAA520;
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;   
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 12px;
+    color: #8B4513;
+}
+
+.card p {
+    margin: 12px;
+}
+
+/* Featured City */
+.featured {
+    background-color: #DAA520;
+    padding: 40px;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-box {
+    display: flex;
+    gap: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.featured-box img {
+    width: 350px;   
+    border-radius: 12px;
+}
+
+.author {
+    margin-top: 12px;
+    font-style: italic;
+}
+
+/* Submit */
+.submit {
+    padding: 40px;
+    text-align: center;
+}
+
+.submit h2 {
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #DAA520;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #DAA520;
+}
+
+/* Footer */
+footer {
+    background-color: #F5F5DC;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    color: #8B4513;
+    border-top: 1px solid #DAA520;
+}
+
+footer .creator {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
